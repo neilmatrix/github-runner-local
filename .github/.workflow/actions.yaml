@@ -1,0 +1,14 @@
+name: Self-Hosted Runner Test
+
+on:
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  test-runner:
+    runs-on: self-hosted  # Must match your runner label
+    steps:
+      - name: Print hostname
+        run: hostname
+
+      - name: Say Hello
+        run: echo "✅ Self-hosted runner is working!"
