@@ -5,7 +5,7 @@ on:
 
 jobs:
   test-runner:
-    runs-on: self-hosted  # Must match your runner label
+    runs-on: mac-machine  # Must match your runner label
     steps:
       - name: Print hostname
         run: hostname
