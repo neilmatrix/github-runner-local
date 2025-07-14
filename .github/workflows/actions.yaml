@@ -12,3 +12,13 @@ jobs:
 
       - name: Say Hello
         run: echo "✅ Self-hosted runner is working!"
+
+      - name: Show Run Number
+        run: echo "GitHub Run ID: ${{ github.run_id }} | Run Number: ${{ github.run_number }}"
+
+
+      - name: Start Job
+        run: |
+          echo "Simulating a long-running task (sleeping 60s)..."
+          sleep 60
+          echo "✅ Job completed!"
